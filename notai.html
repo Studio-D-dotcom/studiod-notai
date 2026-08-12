@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Consulenza Fiscale per Notai | Studio D Commercialisti Aversa</title>
+<meta name="description" content="Consulenza fiscale specialistica per Notai. Oltre 30 anni di esperienza al fianco degli studi notarili in tutta Italia: gestione fiscale, verifiche, contenzioso." />
+<link rel="canonical" href="https://www.studiodcommercialisti.it/notai/" />
+<link rel="icon" href="https://www.studiodcommercialisti.it/wp-content/uploads/2024/06/ico-150x150.png" sizes="32x32" />
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700,900|Poppins:100,200,300,regular,500,600,700,800,900|Nunito:200,300,regular,500,600,700,800,900&subset=latin,latin-ext&display=swap' media='all' />
+
+<style>
+	:root{
+		--accent:#7EBEC5;
+		--accent-dark:#5c9aa1;
+		--text-dark:#333333;
+		--text-light:#666666;
+		--bg-light:#f7f9fa;
+	}
+	*{box-sizing:border-box;}
+	body{
+		margin:0;
+		font-family:'Nunito', sans-serif;
+		color:var(--text-dark);
+		line-height:1.7;
+		background:#ffffff;
+	}
+	h1,h2,h3,h4{
+		font-family:'Poppins', sans-serif;
+		font-weight:600;
+		color:var(--text-dark);
+		margin-top:0;
+	}
+	a{ color: var(--accent-dark); text-decoration:none; }
+	a:hover{ text-decoration:underline; }
+	.container{
+		max-width:1080px;
+		margin:0 auto;
+		padding:0 30px;
+	}
+
+	/* HEADER */
+	header{
+		padding:20px 0;
+		border-bottom:1px solid #eee;
+	}
+	.header-inner{
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+		flex-wrap:wrap;
+	}
+	.logo img{ height:60px; width:auto; display:block; }
+	nav ul{
+		list-style:none;
+		display:flex;
+		gap:32px;
+		margin:0;
+		padding:0;
+	}
+	nav a{
+		color:var(--text-dark);
+		font-family:'Poppins', sans-serif;
+		font-size:15px;
+		font-weight:500;
+	}
+	nav a:hover, nav a.active{ color:var(--accent-dark); text-decoration:none; }
+
+	/* HERO */
+	.hero{
+		background:var(--bg-light);
+		padding:70px 0 60px;
+		text-align:center;
+	}
+	.hero h1{
+		font-size:38px;
+		margin-bottom:14px;
+	}
+	.hero p.subtitle{
+		font-size:20px;
+		color:var(--text-light);
+		max-width:700px;
+		margin:0 auto;
+	}
+
+	/* INTRO */
+	.intro{
+		padding:50px 0;
+		text-align:center;
+	}
+	.intro p{
+		max-width:780px;
+		margin:0 auto;
+		font-size:17px;
+		color:var(--text-light);
+	}
+
+	/* 3 BOX */
+	.boxes{
+		display:grid;
+		grid-template-columns:repeat(3, 1fr);
+		gap:30px;
+		padding:20px 0 60px;
+	}
+	.box{
+		background:var(--bg-light);
+		border-radius:6px;
+		padding:30px 26px;
+		text-align:center;
+	}
+	.box h4{
+		font-size:18px;
+		margin-bottom:12px;
+		color:var(--accent-dark);
+	}
+	.box p{
+		font-size:15px;
+		color:var(--text-light);
+		margin:0;
+	}
+
+	/* SECTION generic */
+	.section{
+		padding:50px 0;
+	}
+	.section.alt{
+		background:var(--bg-light);
+	}
+	.section h2{
+		font-size:28px;
+		text-align:center;
+		margin-bottom:34px;
+	}
+	.section .text-block{
+		max-width:800px;
+		margin:0 auto;
+		font-size:16px;
+		color:var(--text-light);
+	}
+	.section .text-block p{ margin-bottom:16px; }
+
+	/* CHECKLIST */
+	.checklist{
+		max-width:700px;
+		margin:0 auto;
+		list-style:none;
+		padding:0;
+	}
+	.checklist li{
+		position:relative;
+		padding:10px 0 10px 34px;
+		font-size:16px;
+		border-bottom:1px solid #eaeaea;
+	}
+	.checklist li:last-child{ border-bottom:none; }
+	.checklist li::before{
+		content:"✓";
+		position:absolute;
+		left:0;
+		top:10px;
+		color:var(--accent-dark);
+		font-weight:700;
+	}
+
+	/* PERCHE SCEGLIERCI GRID */
+	.why-grid{
+		display:grid;
+		grid-template-columns:repeat(3, 1fr);
+		gap:26px;
+	}
+	.why-item{
+		padding:24px;
+		border:1px solid #eaeaea;
+		border-radius:6px;
+	}
+	.why-item h4{
+		font-size:16px;
+		color:var(--accent-dark);
+		margin-bottom:8px;
+	}
+	.why-item p{
+		font-size:14px;
+		color:var(--text-light);
+		margin:0;
+	}
+
+	/* CTA */
+	.cta-section{
+		text-align:center;
+		padding:70px 0;
+		background:var(--bg-light);
+	}
+	.cta-section h2{ font-size:26px; margin-bottom:14px; }
+	.cta-section p{
+		color:var(--text-light);
+		max-width:600px;
+		margin:0 auto 30px;
+		font-size:16px;
+	}
+	.btn{
+		display:inline-block;
+		background:var(--accent);
+		color:#ffffff;
+		font-family:'Poppins', sans-serif;
+		font-weight:600;
+		font-size:14px;
+		letter-spacing:0.5px;
+		text-transform:uppercase;
+		padding:16px 34px;
+		border-radius:3px;
+		transition:background .2s ease;
+	}
+	.btn:hover{
+		background:var(--accent-dark);
+		text-decoration:none;
+	}
+
+	/* FOOTER */
+	footer{
+		background:var(--bg-light);
+		padding:50px 0 30px;
+		border-top:1px solid #eee;
+	}
+	.footer-grid{
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr;
+		gap:30px;
+	}
+	.footer-grid img{ height:50px; margin-bottom:10px; }
+	.footer-grid h4{ font-size:15px; margin-bottom:10px; }
+	.footer-grid p{ font-size:14px; color:var(--text-light); margin:0 0 4px; }
+	.footer-grid a{ font-size:14px; }
+
+	@media (max-width: 780px){
+		.boxes{ grid-template-columns:1fr; }
+		.why-grid{ grid-template-columns:1fr; }
+		.footer-grid{ grid-template-columns:1fr; text-align:center; }
+		nav ul{ gap:18px; justify-content:center; }
+		.header-inner{ justify-content:center; text-align:center; gap:14px; }
+	}
+</style>
+</head>
+<body>
+
+<header>
+	<div class="container header-inner">
+		<div class="logo">
+			<a href="https://www.studiodcommercialisti.it/">
+				<img src="https://www.studiodcommercialisti.it/wp-content/uploads/2024/06/logo-sito-petrolio.png" alt="Studio D Commercialisti">
+			</a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="https://www.studiodcommercialisti.it/">Home</a></li>
+				<li><a href="notai.html" class="active">Notai</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<section class="hero">
+	<div class="container">
+		<h1>Consulenza fiscale specialistica per Notai</h1>
+		<p class="subtitle">La consulenza fiscale costruita intorno alla professione notarile</p>
+	</div>
+</section>
+
+<section class="intro">
+	<div class="container">
+		<p>Da oltre 30 anni affianchiamo i Notai nella gestione fiscale della loro attività professionale, con un'assistenza costruita sulle specifiche peculiarità della funzione notarile: i suoi adempimenti, i flussi finanziari, le imposte riscosse per conto dello Stato e le implicazioni fiscali che ne derivano. Non una consulenza generalista, ma una specializzazione maturata sul campo.</p>
+	</div>
+</section>
+
+<section class="section" style="padding-top:0;">
+	<div class="container">
+		<div class="boxes">
+			<div class="box">
+				<h4>Esperienza trentennale</h4>
+				<p>Assistiamo Notai in tutta Italia, da Milano a Bari, passando per Ferrara, Reggio Emilia, Roma, Ancona, Terracina, Aversa e Napoli, con un modello digitale che supera i limiti territoriali.</p>
+			</div>
+			<div class="box">
+				<h4>Generazioni diverse di professionisti</h4>
+				<p>Affianchiamo Notai già affermati e, soprattutto, giovani Notai sin dalle prime fasi dell'attività nella gestione e crescita dello Studio.</p>
+			</div>
+			<div class="box">
+				<h4>20+ verifiche fiscali gestite</h4>
+				<p>Esperienza diretta nei rapporti con Agenzia delle Entrate e Guardia di Finanza durante accessi e controlli.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section alt">
+	<div class="container">
+		<h2>Una consulenza pensata per l'attività notarile</h2>
+		<ul class="checklist">
+			<li>Corretta gestione fiscale e contabile dello Studio</li>
+			<li>Pianificazione fiscale e finanziaria dell'attività professionale</li>
+			<li>Supporto nella digitalizzazione dei processi amministrativi</li>
+			<li>Assistenza nei rapporti con l'Amministrazione finanziaria</li>
+			<li>Supporto durante accessi, ispezioni e verifiche fiscali</li>
+			<li>Assistenza nel precontenzioso e nel contenzioso tributario</li>
+		</ul>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container">
+		<h2>L'esperienza nei controlli fiscali</h2>
+		<div class="text-block">
+			<p>Abbiamo maturato una significativa esperienza nell'assistenza ai Notai in occasione di accessi, ispezioni e verifiche fiscali, avendo affiancato i professionisti in molteplici accessi condotti dall'Agenzia delle Entrate e dalla Guardia di Finanza.</p>
+			<p>Questa esperienza ci consente di conoscere non soltanto il quadro normativo di riferimento, ma anche le concrete dinamiche dell'attività di controllo, la documentazione oggetto di esame e le principali aree di rischio connesse all'esercizio dell'attività notarile.</p>
+			<p>Il nostro approccio, tuttavia, è anzitutto preventivo: l'assistenza in sede di verifica inizia prima della verifica stessa, attraverso un costante presidio della correttezza fiscale, contabile e documentale dello Studio, finalizzato a prevenire le criticità e ad affrontare con consapevolezza un eventuale controllo.</p>
+		</div>
+	</div>
+</section>
+
+<section class="section alt">
+	<div class="container">
+		<h2>Esperienza notarile, tecnologia e consulenza smart</h2>
+		<div class="text-block">
+			<p>La nostra esperienza nasce dalla consulenza tradizionale, ma lavoriamo con strumenti digitali e procedure informatizzate che rendono il rapporto con lo Studio più semplice, veloce e trasparente. La tecnologia non sostituisce il rapporto professionale: automatizziamo ciò che può essere automatizzato, per dedicare più tempo alla consulenza che richiede esperienza e responsabilità professionale. Questo ci consente di seguire con la stessa continuità uno Studio vicino a noi o a centinaia di chilometri di distanza.</p>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container">
+		<h2>Un supporto che va oltre la fiscalità</h2>
+		<div class="text-block">
+			<p><strong>Custodie, vendite delegate ed esecuzioni immobiliari.</strong> Affianchiamo Notai anche negli incarichi di custode giudiziario e professionista delegato alle vendite, nelle procedure esecutive immobiliari e nelle divisioni giudiziali, con supporto negli aspetti amministrativi, contabili e fiscali — anche a distanza, indipendentemente dalla sede dello Studio o dal Tribunale competente.</p>
+		</div>
+	</div>
+</section>
+
+<section class="section alt">
+	<div class="container">
+		<h2>Perché scegliere Studio D</h2>
+		<div class="why-grid">
+			<div class="why-item">
+				<h4>30+ anni di esperienza</h4>
+				<p>Nella consulenza fiscale dedicata ai Notai.</p>
+			</div>
+			<div class="why-item">
+				<h4>Presenza nazionale</h4>
+				<p>Assistiamo studi notarili dal Nord al Sud Italia.</p>
+			</div>
+			<div class="why-item">
+				<h4>20+ accessi e verifiche fiscali</h4>
+				<p>Gestiti direttamente, al fianco dei professionisti.</p>
+			</div>
+			<div class="why-item">
+				<h4>Specializzazione</h4>
+				<p>Conosciamo le peculiarità fiscali, contabili e finanziarie dell'attività notarile.</p>
+			</div>
+			<div class="why-item">
+				<h4>Digitalizzazione</h4>
+				<p>Un modello di consulenza smart, efficace anche a distanza.</p>
+			</div>
+			<div class="why-item">
+				<h4>Procedure giudiziarie</h4>
+				<p>Supporto anche negli incarichi di custode e delegato alle vendite.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="cta-section">
+	<div class="container">
+		<h2>Parliamo del tuo Studio</h2>
+		<p>Se sei un Notaio e vuoi confrontarti sulla gestione fiscale del tuo Studio, richiedi un primo incontro. La distanza non è un problema. La conoscenza del tuo lavoro fa la differenza.</p>
+		<a href="https://www.studiodcommercialisti.it/#contatti" class="btn">Richiedi una consulenza</a>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="footer-grid">
+			<div>
+				<img src="https://www.studiodcommercialisti.it/wp-content/uploads/2024/05/logo-sito.png" alt="Studio D">
+				<h4>COMMERCIALISTI AVERSA</h4>
+				<p>Aversa (CE)</p>
+				<p>Viale Olimpico, 182</p>
+				<p>081 1975 1643</p>
+			</div>
+			<div>
+				<h4>ATTIVITA'</h4>
+				<p>· Criptoasset tax advisoring</p>
+				<p>· Tax litigation</p>
+				<p>· Consulenza fiscale per Notai</p>
+			</div>
+			<div>
+				<h4>CONTATTI</h4>
+				<p>CONSULENZA FISCALE</p>
+				<p><a href="mailto:m.dacquisto@studiodcommercialisti.it">m.dacquisto@studiodcommercialisti.it</a></p>
+				<p>CONTENZIOSI</p>
+				<p><a href="mailto:dangiolella@studiodcommercialisti.it">dangiolella@studiodcommercialisti.it</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
