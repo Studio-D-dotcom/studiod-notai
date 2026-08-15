@@ -13,11 +13,15 @@
 
 <style>
 	:root{
-		--accent:#7EBEC5;
-		--accent-dark:#5c9aa1;
+		--teal:#00617E;
+		--teal-alt:#00617F;
+		--gold:#C9A84C;
+		--navy:#1B2B4B;
+		--accent:#00617E;
+		--accent-dark:#00617F;
 		--text-dark:#333333;
 		--text-light:#666666;
-		--bg-light:#f7f9fa;
+		--bg-light:#f5f8fa;
 	}
 	*{box-sizing:border-box;}
 	body{
@@ -28,12 +32,12 @@
 		background:#ffffff;
 	}
 	h1,h2,h3,h4{
-		font-family:'Poppins', sans-serif;
-		font-weight:600;
-		color:var(--text-dark);
+		font-family:'Trebuchet MS', 'Poppins', sans-serif;
+		font-weight:700;
+		color:var(--navy);
 		margin-top:0;
 	}
-	a{ color: var(--accent-dark); text-decoration:none; }
+	a{ color: var(--teal); text-decoration:none; }
 	a:hover{ text-decoration:underline; }
 	.container{
 		max-width:1080px;
@@ -44,7 +48,7 @@
 	/* HEADER */
 	header{
 		padding:20px 0;
-		border-bottom:1px solid #eee;
+		background:var(--teal-alt);
 	}
 	.header-inner{
 		display:flex;
@@ -61,12 +65,12 @@
 		padding:0;
 	}
 	nav a{
-		color:var(--text-dark);
-		font-family:'Poppins', sans-serif;
+		color:#ffffff;
+		font-family:'Trebuchet MS', 'Poppins', sans-serif;
 		font-size:15px;
 		font-weight:500;
 	}
-	nav a:hover, nav a.active{ color:var(--accent-dark); text-decoration:none; }
+	nav a:hover, nav a.active{ color:var(--gold); text-decoration:none; }
 
 	/* HERO */
 	.hero{
@@ -106,14 +110,17 @@
 	}
 	.box{
 		background:var(--bg-light);
-		border-radius:6px;
+		border-top:3px solid var(--gold);
+		border-radius:4px;
 		padding:30px 26px;
 		text-align:center;
 	}
 	.box h4{
 		font-size:18px;
+		font-weight:700;
 		margin-bottom:12px;
-		color:var(--accent-dark);
+		color:var(--teal);
+		letter-spacing:0.2px;
 	}
 	.box p{
 		font-size:15px;
@@ -228,7 +235,7 @@
 		grid-template-columns:1fr 1fr 1fr;
 		gap:30px;
 	}
-	.footer-grid img{ height:50px; margin-bottom:10px; }
+	.footer-grid img{ height:38px; margin-bottom:14px; }
 	.footer-grid h4{ font-size:15px; margin-bottom:10px; }
 	.footer-grid p{ font-size:14px; color:var(--text-light); margin:0 0 4px; }
 	.footer-grid a{ font-size:14px; }
@@ -248,7 +255,7 @@
 	<div class="container header-inner">
 		<div class="logo">
 			<a href="https://www.studiodcommercialisti.it/">
-				<img src="https://www.studiodcommercialisti.it/wp-content/uploads/2024/06/logo-sito-petrolio.png" alt="Studio D Commercialisti">
+				<img src="images/logo-white.png" alt="Studio D Commercialisti">
 			</a>
 		</div>
 		<nav>
@@ -379,7 +386,7 @@
 	<div class="container">
 		<div class="footer-grid">
 			<div>
-				<img src="https://www.studiodcommercialisti.it/wp-content/uploads/2024/05/logo-sito.png" alt="Studio D">
+				<img src="images/logo-teal.png" alt="Studio D">
 				<h4>COMMERCIALISTI AVERSA</h4>
 				<p>Aversa (CE)</p>
 				<p>Viale Olimpico, 182</p>
